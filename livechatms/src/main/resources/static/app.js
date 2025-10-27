@@ -24,10 +24,9 @@ function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
-        $("#conversation").show();
-    }
-    else {
-        $("#conversation").hide();
+        $("#connect").text("Connected");
+    } else {
+        $("#connect").text("Connect");
     }
 }
 
@@ -52,7 +51,12 @@ function sendMessage() {
 }
 
 function updateLiveChat(message) {
-    $("#livechat").append("<tr><td>" + message + "</td></tr>");
+    const parts = message.split(': ');
+    const username = parts[0];
+    const text = parts.slice(1).join(': ');
+    const formattedMessage = "<div class='message'><strong>" + username + ":</strong> " + text + "</div>";
+    $("#livechat").append(formattedMessage);
+    $('.chat-messages').scrollTop($('.chat-messages')[0].scrollHeight);
 }
 
 $(function () {

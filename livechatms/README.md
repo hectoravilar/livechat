@@ -1,46 +1,46 @@
 # LiveChat MS
 
-Aplicação de chat em tempo real desenvolvida com Spring Boot e WebSockets.
+Real-time chat application built with Spring Boot and WebSockets.
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 - **Backend**: Spring Boot 3.5.7 + Java 21
 - **WebSocket**: STOMP Protocol
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap
 - **Build**: Maven
 
-## 📋 Funcionalidades
+## 📋 Features
 
-- Chat em tempo real com WebSockets
-- Interface responsiva com tema escuro
-- Conexão/desconexão dinâmica
-- Escape automático de HTML para segurança
+- Real-time chat with WebSockets
+- Responsive interface with dark theme
+- Dynamic connection/disconnection
+- Automatic HTML escaping for security
 
 ## 🌐 Deploy
 
-A aplicação está hospedada no **AWS Elastic Beanstalk**:
+The application is hosted on **AWS Elastic Beanstalk**:
 
-- **Ambiente**: Produção
-- **Plataforma**: Java 21 com Corretto
-- **Serviço**: AWS Elastic Beanstalk
-- **Status**:  offline
+- **Environment**: Production
+- **Platform**: Java 21 with Corretto
+- **Service**: AWS Elastic Beanstalk
+- **Status**: offline
 
-## 🛠️ Executar Localmente
+## 🛠️ Run Locally
 
 ```bash
-# Clonar repositório
+# Clone repository
 git clone <repository-url>
 
-# Navegar para o diretório
+# Navigate to directory
 cd livechatms
 
-# Executar aplicação
+# Run application
 ./mvnw spring-boot:run
 ```
 
-Acesse: `http://localhost:8080`
+Access: `http://localhost:8080`
 
-## 📁 Estrutura
+## 📁 Structure
 
 ```
 src/
@@ -57,7 +57,7 @@ src/
     └── main.css
 ```
 
-## 🔧 Configuração WebSocket
+## 🔧 WebSocket Configuration
 
 - **Endpoint**: `/hectoravlr-livechat-websocket`
 - **Broker**: `/topics`
