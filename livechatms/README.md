@@ -12,7 +12,7 @@ Real-time chat application built with Spring Boot and WebSockets.
 ## 📋 Features
 
 - Real-time chat with WebSockets
-- Responsive interface with dark theme
+- Responsive interface
 - Dynamic connection/disconnection
 - Automatic HTML escaping for security
 
@@ -29,7 +29,7 @@ The application is hosted on **AWS Elastic Beanstalk**:
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone <https://github.com/hectoravilar/livechat.git>
 
 # Navigate to directory
 cd livechatms
@@ -38,7 +38,7 @@ cd livechatms
 ./mvnw spring-boot:run
 ```
 
-Access: `http://localhost:8080`
+Access: `http://localhost:5000`
 
 ## 📁 Structure
 
